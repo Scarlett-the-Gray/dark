@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style> 
+ body {
+    background-color: rgb(177, 170, 170);
+}
+  </style> 
+<header>
+  <h1 style="font-family: Arial, sans-serif; color: rgb(100, 100, 102); text-align: center; font-size: 40px;">Welcome to "Echoes in the Dark"</h1>
+</header>
+
+<p style="color: rgb(17, 17, 17); font-size: 18px; text-align: center;">A haunting and mysterious gothic band that creates music to take you on a journey through the shadows.</p>
+
+<h2 style="color: rgb(100, 100, 102); font-size: 30px; text-align: center;">Overview of the band's history and formation:</h2>
+<p style="color: rgb(17, 17, 17); font-size: 18px; text-align: center;">Echoes in the Dark was formed in a small town in the heart of the gothic countryside. The band's founders, vocalist Raven and guitarist Dante, were drawn together by their love of dark and moody music, and they soon recruited drummer Shadow and bassist Nocturne to round out the lineup.
+  Over the years, Echoes in the Dark has honed their sound and become one of the most respected and influential bands in the gothic music scene. Their powerful and evocative music has won them legions of fans, and they continue to tour and record new music to this day.</p>
+
+<h2 style="color: rgb(100, 100, 102); font-size: 30px; text-align: center;">Bios and photos of each band member:</h2>
+<table style="margin: 0 auto;">
+  <tr>
+    <td>
+      <button class="member-button" style="text-align: center; display: inline-block;">
+        <h4 class="member-name" style="font-size: 15px; color: rgb(100, 100, 102); text-align: center;">Raven:</h4>
+        <p class="member-info" style="color: rgb(17, 17, 17); font-size: 18px; text-align: center;">Vocalist and frontwoman, Raven, has a voice that can summon the spirits from the other side. With her powerful stage presence and hauntingly beautiful vocals, she leads Echoes in the Dark on their dark and mysterious journeys.</p>
+      </button>
+    </td>
+    <td>
+      <button class="member-button" style="text-align: center; display: inline-block;">
+        <h4 class="member-name" style="font-size: 15px; color: rgb(100, 100, 102); text-align: center;">Dante:</h4>
+        <p class="member-info" style="color: rgb(17, 17, 17); font-size: 18px; text-align: center;">Guitarist Dante is the mastermind behind Echoes in the Dark's haunting melodies. With his mastery of the guitar, he weaves a tapestry of sound that is both beautiful and darkly seductive.</p>
+      </button>
+      </td>
+      <td>
+      <button class="member-button" style="text-align: center; display: inline-block;">
+      <h4 class="member-name" style="font-size: 15px; color: rgb(100, 100, 102); text-align: center;">Shadow:</h4>
+      <p class="member-info" style="color: rgb(17, 17, 17); font-size: 18px; text-align: center;">Drummer Shadow is the heartbeat of Echoes in the Dark. With his powerful beats and precision playing, he propels the band forward and provides the foundation for their soaring music.</p>
+      </button>
+      </td>
+      <td>
+      <button class="member-button" style="text-align: center; display: inline-block;">
+      <h4 class="member-name" style="font-size: 15px; color: rgb(100, 100, 102); text-align: center;">Nocturne:</h4>
+      <p class="member-info" style="color: rgb(17, 17, 17); font-size: 18px; text-align: center;">Bassist Nocturne is the backbone of Echoes in the Dark's sound. With his deep and groovy basslines, he adds a layer of darkness and depth to the band's music.</p>
+      </button>
+      </td>
+      
+        </tr>
+      </table>
+      <h2 style="color: rgb(100, 100, 102); font-size: 30px; text-align: center;">Description of the band's music style and influences:</h2>
+      <p style="color: rgb(17, 17, 17); font-size: 18px; text-align: center;">Echoes in the Dark's music is a fusion of classic gothic rock, darkwave, and industrial, with a heavy dose of the macabre. Their songs are haunting and evocative, taking listeners on a journey through the shadows and into the realm of the supernatural.
+        The band's influences range from classic gothic rockers like Bauhaus and Siouxsie and the Banshees, to darkwave acts like Depeche Mode and Clan of Xymox, to industrial pioneers like Ministry and Nine Inch Nails. With their diverse musical backgrounds, Echoes in the Dark creates a sound that is uniquely their own, and that has earned them a place in the pantheon of great gothic bands.</p>
+      <footer style="background-color: rgb(99, 100, 101); text-align: center; color: rgb(243, 239, 241); font-size: 12px; padding: 1em;">
+        <p>Copyright &copy; {{ year }} Echoes in the Dark</p>
+        <button><a href="#" style="font-size: 18px; color: rgb(10, 10, 10); text-align: center;">Page Top</a></button>
+        <nav>
+          <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+            <li><a href="#"style="display: block; padding: 0.5em; color: rgb(87, 87, 93); font-size: 18px; background-color: rgb(157, 159, 164); text-decoration: none;">Home</a></li>
+            <li><a href="#" style="display: block; padding: 0.5em; color: rgb(87, 87, 93); font-size: 18px; background-color: rgb(157, 159, 164); text-decoration: none;">Contact</a></li>
+            <li><a href="#" style="display: block; padding: 0.5em; color: rgb(87, 87, 93); font-size: 18px; background-color: rgb(157, 159, 164); text-decoration: none;">About us</a></li>
+            
+            </ul>
+            
+              </nav>
+            </footer>
+            {% endblock %}

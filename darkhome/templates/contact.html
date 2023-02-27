@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style> 
+body {
+    background-color: rgb(177, 170, 170);
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(7, 7, 7); 
+    font-size: 18px; 
+    background-color: rgb(157, 159, 164); 
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: rgb(87, 87, 93); 
+    font-size: 18px; 
+    background-color: rgb(255, 255, 255); 
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color:rgb(100, 100, 102);
+    color:  rgb(17, 17, 17);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; 
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color:rgb(100, 100, 102);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+   margin-bottom: 5px;
+   display: internal; 
+   padding: 0.5em; 
+   
+   font-size: 18px; 
+   background-color: rgb(100, 100, 102); 
+   text-decoration: none;
+   text-align:center
+   
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+</style>
+
+<header>
+<h1 style="font-family: URW Chancery L, cursive; color: rgb(100, 100, 102); text-align: center; font-size: 40px;">Get in Touch with Echoes in the Dark</h1>
+</header>
+
+<h2 style="font-family: URW Chancery L, cursive; color: rgb(100, 100, 102); font-size: 30px; text-align: center;">Please complete the form:</h2>
+
+<form action="{% url 'contact_us' %}" method="post">
+  {% csrf_token %}
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="subject">Subject:</label>
+  <input type="text" id="subject" name="subject" required><br>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<h2 style="font-family: URW Chancery L, cursive; color: rgb(100, 100, 102); font-family: URW Chancery L, cursive; font-size: 30px; text-align: center;">Book Echoes in the Dark for a Show or Event</h2>
+
+<p class="font-family: URW Chancery L, cursive; member-info" style="color: rgb(17, 17, 17); font-size: 18px; text-align: center;font-family: URW Chancery L, cursive;">If you're interested in booking Echoes in the Dark for a show or event, we'd be honored to be a part of it! Please use the form above to get in touch with us, and be sure to include all relevant details about your event.</p>
+<h2 style="font-family: URW Chancery L, cursive; color: rgb(100, 100, 102); font-size: 30px; text-align: center;">Follow Echoes in the Dark on Social Media</h2>
+
+
+<p class="member-info" style="font-family: URW Chancery L, cursive; color: rgb(17, 17, 17); font-size: 18px; text-align:center;">Stay up-to-date with all the latest news, shows, and musings from Echoes in the Dark by following us on social media. We can be found on:</p><ul>
+  <li><a href="https://www.facebook.com/echoesinthedark">Facebook</a></li>
+  <li><a href="https://www.instagram.com/echoesinthedark">Instagram</a></li>
+  <li><a href="https://twitter.com/echoesinthedark">Twitter</a></li>
+</ul>
+
+{% endblock %}
+

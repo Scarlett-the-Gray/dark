@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <style> 
+    body {
+    background-color: rgb(177, 170, 170);
+}
+    </style> 
+	<header>
+		<h1 style="font-family: URW Chancery L, cursive; color: rgb(100, 100, 102); text-align: center; font-size: 40px;">Welcome to "Echoes in the Dark"</h1>
+	</header>
+
+	{% block content %}
+	{% endblock %}
+
+	<footer style="background-color: rgb(99, 100, 101); text-align: center; color: rgb(243, 239, 241); font-size: 12px; padding: 1em;">
+		<p>&copy; {{ year }} Echoes in the Dark</p>
+		<button><a href="#" style="font-size: 18px; color: rgb(10, 10, 10); text-align: center;">Page Top</a></button>
+		<nav>
+			<ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+				<li><a href="#"style="display: block; padding: 0.5em; color: rgb(87, 87, 93); font-size: 18px; background-color: rgb(157, 159, 164); text-decoration: none;">Home</a></li>
+				<li><a href="#" style="display: block; padding: 0.5em; color: rgb(87, 87, 93); font-size: 18px; background-color: rgb(157, 159, 164); text-decoration: none;">Contact</a></li>
+				<li><a href="#" style="display: block; padding: 0.5em; color: rgb(87, 87, 93); font-size: 18px; background-color: rgb(157, 159, 164); text-decoration: none;">About us</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

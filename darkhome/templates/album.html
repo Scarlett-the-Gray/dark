@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style> 
+    body {
+        background-color: rgb(177, 170, 170);
+    }
+   
+    p {
+        color: rgb(17, 17, 17);     
+        font-size: 18px; 
+        text-align: center;
+        font-family: URW Chancery L, cursive;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        background-color: rgb(100, 100, 102);
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    td {
+        background-color: rgb(229, 229, 229);
+        color: #333;
+        font-size: 18px;
+        font-family: URW Chancery L, cursive;
+    }
+
+    tr:nth-child(even) td {
+        background-color: rgb(245, 245, 245);
+    }
+    
+</style>
+
+<header>
+    <h1 style="font-family: URW Chancery L, cursive; color: rgb(100, 100, 102); text-align: center; font-size: 40px;">Latest Album</h1>
+</header>
+
+<h2 style="font-family: URW Chancery L, cursive; color: rgb(100, 100, 102); font-size: 30px; text-align: center;">Detailed information about the latest album:</h2>
+
+<p>Echoes in the Dark's latest album is a collection of dark, moody, and haunting songs that takes listeners on a journey through the shadows. The album features the band's signature sound, blending classic gothic rock with elements of darkwave and industrial, and features soaring vocals, driving beats, and haunting melodies.</p>
+
+<p>The album was recorded over the course of several months in a dark and eerie studio deep in the heart of the gothic countryside, and was produced by the band's own Dante. With its powerful songs and evocative production, the latest album from Echoes in the Dark is a must-have for fans of gothic music.</p>
+
+<h2 style="font-family: URW Chancery L, cursive; color: rgb(100, 100, 102); font-size: 30px; text-align: center;">Track list and lyrics for each song:</h2>
+
+<div style="display: flex; justify-content: center;">
+    <table style="margin-right: 50px;">
+      <tr>
+        <th colspan="2">Disc One</th>
+      </tr>
+      <tr>
+        <td>1. "Shadows Fall"</td>
+        <td>
+          <p>[Verse 1]<br>
+          In the darkness I can hear them call<br>
+          Whispers that echo against the wall<br>
+          I try to hide but they always find me<br>
+          Shadows that haunt and remind me</p>
+        </td>
+      </tr>
+      <tr>
+        <td>2. "Dance with the Dead"</td>
+        <td>
+          <p>[Verse 1]<br>
+          Under the moonlight, we come alive<br>
+          Dancing with the dead, we feel alive<br>
+          The music takes us to another place<br>
+          A world of darkness, a sacred space</p>
+        </td>
+    </tr>
+    <tr>
+        <td>3. "Nightmares"</td>
+        <td>
+          <p>[Verse 1]<br>
+          In the darkness, they come for me<br>
+          Nightmares that won't let me be<br>
+          I try to run, I try to hide<br>
+          But they always find me, deep inside</p>
+        </td>
+      </tr>
+      <tr>
+        <td>4. "Whispers in the Dark"</td>
+        <td>
+          <p>[Verse 1]<br>
+          Whispers in the dark, they call to me<br>
+          Voices that haunt and won't let me be<br>
+          I try to escape, I try to run<br>
+          But they always find me, they always come</p>
+        </td>
+      </tr>
+      <tr>
+        <td>5. "Echoes of the Past"</td>
+        <td>
+          <p>[Verse 1]<br>
+          Memories that haunt and won't let go<br>
+          Echoes of the past, a never-ending show<br>
+          I try to forget, I try to move on<br>
+          But the echoes remain, they linger on</p>
+        </td>
+      </tr>
+    </table>
+<table>
+  <tr>
+    <th colspan="2">Disc Two</th>
+  </tr>
+  <tr>
+    <td>6. "Siren's Song"</td>
+    <td>
+      <p>[Verse 1]<br>
+      The siren's song, it calls to me<br>
+      A haunting melody, a symphony<br>
+      I'm drawn to the shore, I can't resist<br>
+      The siren's song, a deadly kiss</p>
+    </td>
+  </tr>
+  <tr>
+    <td>7. "The Darkest Hour"</td>
+    <td>
+      <p>[Verse 1]<br>
+      In the darkest hour, I stand alone<br>
+      Shadows surround me, a chilling tone<br>
+      I try to fight, I try to survive<br>
+      But the darkness consumes me, it takes me alive</p>
+    </td>
+  </tr>
+  <tr>
+    <td>8. "A Night to Remember"</td>
+    <td>
+      <p>[Verse 1]<br>
+      A night to remember, a night to forget<br>
+      The darkness surrounds us, a dangerous bet<br>
+      We dance in the shadows, we move with the beat<br>
+      A night to remember, a night of deceit</p>
+    </td>
+  </tr>
+  <tr>
+    <td>9. "Under the Moon"</td>
+    <td>
+      <p>[Verse 1]<br>
+      Under the moon, we come alive<br>
+      Shadows that dance, a dangerous vibe<br>
+      We move to the music, we lose control<br>
+      Under the moon, we surrender our soul</p>
+    </td>
+  </tr>
+  <tr>
+    <td>10. "The End of the Night"</td>
+    <td>
+      <p>[Verse 1]<br>
+      The end of the night, the dawn draws near<br>
+      Shadows retreat, the darkness clears<br>
+      We say goodbye, we go our separate ways<br>
+      But the memories remain, the echoes of our days</p>
+    </td>
+  </tr>
+</table>
+</div>
+{% endblock %}
